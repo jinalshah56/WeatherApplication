@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$weather-primary: mat-palette($mat-red, 500);
+$weather-accent: mat-palette($mat-blue, 400);
+
+
+$weatherapp-theme: mat-light-theme($weather-primary, $weather-accent);
+@include angular-material-theme($weatherapp-theme);
+

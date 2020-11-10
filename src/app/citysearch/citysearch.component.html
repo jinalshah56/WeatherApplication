@@ -1,0 +1,10 @@
+<form>
+    <mat-form-field>
+        <mat-icon matPrefix>search</mat-icon>
+        <input matInput placeholder="Enter city name" aria-label="City Name" [formControl]="search">
+        <mat-hint>Specify country code like 'Ahmedabad, IN' </mat-hint>
+        <mat-error *ngIf="search.invalid">
+            Type more than three character to search city name
+        </mat-error>
+    </mat-form-field>
+</form>
